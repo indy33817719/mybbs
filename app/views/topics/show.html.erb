@@ -1,0 +1,36 @@
+<header>
+  <div class="contents-bg">
+    <div class="contents">
+      </br>
+      </br>
+      <h1><%= "#{@topic.title}" %></h1>
+      <p>~Let's share your knowledge!~</p>
+    </div>
+  </div>
+</header>
+
+<div class="container mt-5 ml-5">
+<div class="row">
+  <% @posts.each do |post| %>
+    <div class="table tabel-hover">
+        <div class="list-group" style="max-width: 500px;">
+          <div class="list-group-item list-group-item-action">
+            <%= post.body %>
+            <br>
+            <small class="text-muted text-right">
+            <%= post.created_at %>
+            <%= post.user.name %>
+            </small>
+          </div>
+      </div>
+  <% end %>
+  </div>
+</div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <%= link_to '投稿画面へ', new_topic_post_path(@topic), topic_id: @topic.id, class: 'btn btn-primary' %>
+  </div>
+
+</div>

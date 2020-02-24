@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <% if user_signed_in?%>
+      <li class="nav-item">
+        <%= link_to 'トピック一覧', authenticated_root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'トピック新規作成', new_topic_path, class: "nav-link" %>
+      </li>
+        <li class="nav-item">
+          <%= link_to 'アカウント編集', edit_user_registration_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to 'トピック一覧', topics_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'アカウント登録', new_user_registration_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'ログイン', unauthenticated_root_path, class: "nav-link"%>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,24 @@
+<header>
+  <div class="contents-bg">
+    <div class="contents">
+      </br>
+      </br>
+      <h1>投稿の作成</h1>
+      <p>~Let's talk to everyone!~</p>
+    </div>
+  </div>
+</header>
+
+<div class="container mt-5 ml-5">
+  <div class="row">
+    <%= form_for(@post, url: topic_posts_path(@topic_id), method: :post) do |f| %>
+      <div class="form-group">
+        <%= f.label :post, '投稿内容' %>
+        <%= f.text_area :body, size: "60*30", class:'form-control' %>
+        <%= hidden_field_tag :topic_id, @topic_id %>
+      </div>
+      <%= link_to '戻る', topic_path(@topic_id), class: 'btn btn-secondary' %>
+      <%= f.submit '投稿する', class: 'btn btn-success' %>
+    <% end %>
+  </div>
+</div>

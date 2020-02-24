@@ -1,0 +1,31 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+//@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+// ログイン画面
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+
+.form-login {
+  background-color:rgba(0,0,0,0.0);
+}
+
+// 「ログインしました」などのフラッシュ用スタイル
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
+
+
+
+
+
+

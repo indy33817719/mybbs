@@ -1,0 +1,41 @@
+<header>
+  <div class="contents-bg">
+    <div class="contents">
+      </br>
+      </br>
+        <h1>トピック一覧</h1>
+        <p>~Let's share your knowledge!~</p>
+    </div>
+  </div>
+</header>
+
+<div class="container mt-5 ml-5">
+  <div class="row">
+    <%= render 'shared/flash_messages' %>
+  </div>
+</div>
+
+<div class="container mt-5 ml-5">
+  <div class="row">
+      <% @topics.each do |topic| %>
+        <div class="table tabel-hover">
+          <%= link_to topic do %>
+            <div class="list-group" style="max-width: 500px;">
+              <div class="list-group-item list-group-item-action">
+                <%= topic.title %> (<%= topic.posts.count %>)
+                <br>
+                <%= topic.posts.last.created_at %>
+              </div>
+          <% end %>
+          </div>
+      <% end %>
+      </div>
+  </div>
+</div>
+
+<div class="container mt-5 ml-5">
+  <div class="row">
+    <%= link_to 'トピックを新規作成する', new_topic_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+

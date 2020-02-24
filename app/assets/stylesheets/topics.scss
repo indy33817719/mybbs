@@ -1,0 +1,36 @@
+// Place all the styles related to the Topics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  font-family:'Roboto','Noto Sans JP';
+  font-size: 20px;
+  color: #212529;
+}
+
+
+.contents-bg {
+  background-image: url(/images/index.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.contents {
+  background-color: rgba(0,0,0,0.6);
+  height: 250px;
+}
+
+.contents h1{
+  color: whitesmoke;
+  padding-left: 50px;
+}
+.contents p{
+  color: whitesmoke;
+  padding-left: 50px;
+}
+
+//一覧表示部分
+
+.topic-index{
+}
