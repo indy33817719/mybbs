@@ -24,7 +24,9 @@
               <div class="list-group-item list-group-item-action">
                 <%= topic.title %> (<%= topic.posts.count %>)
                 <br>
-                <%= topic.posts.last.created_at %>
+                <small class="text-muted text-right">
+                最終投稿日時：<%= topic.posts.last.created_at %>
+                </small>
               </div>
           <% end %>
           </div>

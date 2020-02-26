@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7278fcf1-c484-4bfb-87a3-9376e1727b38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/helpers/devise_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/time_formats.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/ja.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/topics/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/topics/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +173,7 @@
       <workItem from="1581602124034" duration="189000" />
       <workItem from="1581602736188" duration="746000" />
       <workItem from="1581739653394" duration="28673000" />
-      <workItem from="1582033304309" duration="60495000" />
+      <workItem from="1582033304309" duration="64581000" />
     </task>
     <servers />
   </component>
