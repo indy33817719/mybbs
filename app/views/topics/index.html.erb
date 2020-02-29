@@ -25,7 +25,7 @@
                 <%= topic.title %> (<%= topic.posts.count %>)
                 <br>
                 <small class="text-muted text-right">
-                最終投稿日時：<%= topic.posts.last.created_at %>
+                最終投稿日時：<%= topic.posts.last&.created_at %>
                 </small>
               </div>
           <% end %>

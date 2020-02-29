@@ -8,7 +8,7 @@ class TopicsController < ApplicationController
   end
 
   def show
-    @posts = Post.order(created_at: :desc)
+    @posts = @topic.posts.order(created_at: :desc)
   end
 
   def new
